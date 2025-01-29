@@ -192,7 +192,6 @@ body {
 .card-title-text {
   color: #202020;
   text-align: center;
-  font-family: Quicksand;
   font-size: 24.523px;
   font-style: normal;
   font-weight: 700;
@@ -219,14 +218,14 @@ body {
 }
 
 /* arrow-container */
-.arrow-container{
+.arrow-container {
   display: flex;
   margin-top: 80px;
   gap: 15px;
   font-size: 24px;
   color: white;
 }
-.arrow-box{
+.arrow-box {
   height: 60px;
   width: 60px;
   background-color: #fea301;
@@ -237,8 +236,174 @@ body {
   display: flex;
   cursor: pointer;
 }
+/* our-stories sections */
+.our-stories-container {
+  background-image: url("assets/bg.png"),
+    linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 1210px;
+  margin: 0px auto;
+  padding: 30px;
+}
 
-/* mobile devices ------------------------------------*/
+.stories-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-stories-title-text {
+  margin: 60px auto;
+  color: #000;
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+}
+
+/* our stories grid cards sections */
+/* .stories-cards-container{
+  display: flex;
+} */
+
+.big-card {
+  width: 545px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #fff;
+  /* padding: 16px; */
+}
+
+.big-card {
+  text-align: center;
+}
+
+.big-card-img {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.big-card-texts {
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.big-card-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.347px;
+}
+.big-dis-title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #666;
+}
+
+.big-card-btn {
+  position: absolute;
+  display: flex;
+  width: 180px;
+  height: 30px;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #3cd8e8;
+  margin-top: -75px;
+}
+
+.big-card-btn-text {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.761px; /* 187.5% */
+  text-transform: capitalize;
+}
+
+.small-card-container-main-one {
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 8px;
+}
+
+/* small-cards-container */
+.small-cards-container {
+  height: 300px;
+}
+
+.small-card-img {
+  border-radius: 5px;
+  text-align: center;
+}
+
+.small-card {
+  width: 290px;
+  height: 280px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.small-card-title {
+  color: #000;
+  font-size: 15.339px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.761px; /* 187.5% */
+  padding: 16px;
+}
+
+.small-card-btn {
+  position: absolute;
+  padding: 16px;
+  margin-top: -115px;
+  margin-left: 20px;
+  display: flex;
+  width: 120px;
+  height: 20px;
+  padding: 10px 20px 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 47.934px;
+  background: #95b226;
+}
+
+.small-card-btn-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 28.761px;
+  text-transform: capitalize;
+}
+
+.small-card-small-devices {
+  display: none;
+}
+
+/* mobile devices -----------------------*/
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+
 @media only screen and (max-width: 576px) {
   /* 
  body{
@@ -336,8 +501,52 @@ body {
     padding: 28px;
   }
 
-  .arrow-container{
+  .arrow-container {
     display: none;
+  }
+
+  /* our-stories sections */
+  .our-stories-container {
+    width: 360px;
+  }
+
+  .our-stories-title-text {
+    margin-top: 24px;
+    font-size: 30px;
+    font-size: 900;
+  }
+  .our-stories-container {
+    padding: 0px;
+  }
+
+  .big-card {
+    display: none;
+  }
+
+  .small-card-container-main-one {
+    display: none;
+  }
+
+  .small-card-small-devices {
+    display: contents;
+  }
+
+  .small-card-d {
+    width: 150px;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .small-card-img-d {
+    width: 150px;
+    text-align: center;
+  }
+
+  .small-card-title-d {
+    color: #000;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 17.125px; /* 187.5% */
   }
 }
 
