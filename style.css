@@ -6,6 +6,8 @@
 body {
   background: whitesmoke;
   font-family: "Quicksand", serif;
+  width: 90%;
+  margin: 10px auto;
 }
 
 /* therms  */
@@ -27,18 +29,15 @@ body {
 
 /* header */
 .header-wd {
-  width: 100%;
-  margin: 0px auto;
+  width: 1210px;
+  margin: 20px auto;
 }
 
 /* nav-desktop */
 .nav-bar-wd {
   display: flex;
-  /* width: 1160px; */
-  width: auto;
-  justify-content: space-evenly;
   align-items: center;
-  /* margin: 20px auto 140px auto; */
+  justify-content: space-between;
 }
 
 /* logo-text */
@@ -89,14 +88,12 @@ body {
 }
 
 /* banner-container */
+
 .banner-container {
   display: flex;
   flex-direction: row-reverse;
-  width: 80%;
-  margin: 0px auto;
-  justify-content: space-evenly;
   align-items: center;
-  justify-items: center;
+  justify-content: space-between;
 }
 
 .banner-title-text {
@@ -128,13 +125,110 @@ body {
   cursor: pointer;
 }
 
+/* main wd */
+
+.main-wd {
+  width: 1210px;
+  margin: 20px auto;
+}
+
+/* standard-Container */
+.standard-Container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url("assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 60px auto 60px auto;
+}
+
+.standard-title {
+  color: #000;
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+}
+
+.standard-main-cards-container {
+  margin-top: 80px;
+  display: flex;
+  gap: 28px;
+}
+
+.all-card-same {
+  display: flex;
+  width: 285px;
+  height: 476.784px;
+  padding: 52.819px 40.668px 53.762px 40.878px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32.069px;
+  flex-shrink: 0;
+  border-radius: 18.864px;
+  border: 0.943px solid #def5ff;
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
+.first-card {
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+.second-card {
+  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+.third-card {
+  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+
+.card-title-text {
+  color: #202020;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 24.523px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.654px; /* 125% */
+}
+.card-dis-text {
+  color: #808080;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 15.091px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.296px; /* 187.5% */
+  margin: 32px auto;
+}
+
+.read-more {
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15.091px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.296px; /* 187.5% */
+}
+
 /* mobile devices ------------------------------------*/
-@media (max-width: 576px) {
-  /* .header-wd {
-    width: 100%;
-    margin: 0px auto;
+@media only screen and (max-width: 576px) {
+  /* 
+ body{
+  margin: 10px auto;
+  width: 80%;
+ } */
+
+  .header-wd {
+    width: 360px;
   }
-  
+
   /* nav-desktop */
   .nav-bar-wd {
     font-size: 24px;
@@ -147,11 +241,6 @@ body {
   }
 
   .nav-bar-wd-tab {
-    /* flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center; */
     display: none;
   }
 
@@ -160,9 +249,6 @@ body {
   }
 
   .contact-btn {
-    /* width: 100%;
-    text-align: center;
-    font-size: 18px; */
     display: none;
   }
 
@@ -174,15 +260,13 @@ body {
   .banner-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: 0px auto;
     justify-content: space-evenly;
     align-items: center;
     justify-items: center;
   }
 
   .banner-image {
-    width: 380px;
+    width: 350px;
   }
 
   .banner-title-text {
@@ -193,8 +277,8 @@ body {
     margin: 0px auto;
   }
   .banner-dis-text {
-    width: 320px;
-    font-size: 20px;
+    width: auto;
+    font-size: 16px;
     font-weight: 400;
     margin: 20px auto;
     text-align: center;
@@ -203,4 +287,43 @@ body {
   .enroll-btn {
     margin: 0px auto;
   }
+
+  .main-wd {
+    width: 360px;
+  }
+
+  /* standard section */
+
+  .standard-Container {
+    /* width: 80%; */
+  }
+  .standard-title {
+    font-size: 40px;
+  }
+
+  .standard-main-cards-container {
+    margin-top: 40px;
+
+    gap: 28px;
+    flex-direction: column;
+  }
+
+  .all-card-same {
+    width: 220px;
+    height: auto;
+    padding: 28px;
+  }
 }
+
+/* .none {
+  display: none;
+}
+
+
+.green{
+  background-color: green;
+}
+
+.pink{
+  background-color: pink;
+} */
