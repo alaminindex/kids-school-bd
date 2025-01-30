@@ -497,6 +497,17 @@ body {
   margin-bottom: 10px;
 }
 
+.marquee-section {
+  background: floralwhite;
+  margin: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.marquee-section > marquee {
+  font-size: 40px;
+  font-style: 800;
+}
+
 /* mobile devices -----------------------*/
 /* -------------------------------------- */
 /* -------------------------------------- */
@@ -727,6 +738,10 @@ body {
 
   .tabs > p {
     margin-bottom: 5px;
+  }
+
+  .marquee-section{
+    display: none;
   }
 
   /*  */
